@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización de Servicio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo del servicio" class="logo">
+      </div>
+  <h1>Cotización de Rayos X en Quirófano</h1>
+  <form id="cotizador-form">
+    <label for="horas">Tiempo (horas y minutos):</label>
+    <div class="input-group">
+      <input type="number" id="horas" name="horas" required placeholder="Horas" min="0">
+      <input type="number" id="minutos" name="minutos" required placeholder="Minutos" min="0" max="59">
+    </div>
+
+    <label for="tomas">Número de tomas:</label>
+    <input type="number" id="tomas" name="tomas" required placeholder="Ingresa el número de tomas">
+
+    <button type="button" onclick="calcularCosto()">Cotizar</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
