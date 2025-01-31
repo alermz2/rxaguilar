@@ -17,11 +17,11 @@ body {
 }
 .logo-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .logo {
     width: 100%;
-    max-width: 400px; /* Ajusta este valor según el diseño */
+    max-width: 40px; /* Ajusta este valor según el diseño */
     height: auto;
   }  
 h1 {
